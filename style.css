@@ -1,0 +1,130 @@
+/* Basic styles for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+h2 {
+    color: darkred;
+}
+
+/* Buttons */
+button {
+    background-color: darkred;
+    color: white;
+    border: 1px solid black;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+/* Inputs */
+input, textarea {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* Boxes (cards) */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid black;
+    width: 220px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: 140px;
+    background-color: lightgray;
+}
+
+.box ul {
+    text-align: left;
+}
+
+.price {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    background-color: lightgray;
+}
+
+/* Used by JS to hide things */
+.hidden {
+    display: none;
+}
+
+/* Result messages */
+#bmiResult, #membershipMsg, #formMsg {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive: for small screens (mobile) */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    textarea {
+        width: 90%;
+    }
+}

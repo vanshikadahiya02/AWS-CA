@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>GYM 9</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#plans">Workout Plans</a>
+            <a href="#bmi">BMI Calculator</a>
+            <a href="#membership">Membership</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Get Fit. Stay Strong.</h2>
+        <p>Welcome to GYM 9. We help you reach your fitness goals with good trainers, good equipment and simple plans.</p>
+        <img src="https://i.pinimg.com/736x/52/17/3a/52173ab3c95d7695dbd1b32cb91e855f.jpg" alt="Gym photo" width="100">
+        <br><br>
+        <a href="#membership"><button>Join Now</button></a>
+    </section>
+
+    <section id="programs">
+        <h2>Our Fitness Programs</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://i.pinimg.com/1200x/2d/0a/63/2d0a632436a5007addf9527adad05d62.jpg" alt="Weight training">
+                <h3>Weight Training</h3>
+                <p>Build muscle and strength using free weights and machines.</p>
+            </div>
+            <div class="box">
+                <img src="https://i.pinimg.com/736x/fd/37/45/fd3745073afa8eaaed291282712a5cc5.jpg" alt="Cardio">
+                <h3>Cardio</h3>
+                <p>Running, cycling and rowing to improve your stamina.</p>
+            </div>
+            <div class="box">
+                <img src="https://i.pinimg.com/736x/ff/0f/6d/ff0f6dcd4dc68f1e92a48d2a338c3cca.jpg" alt="Yoga">
+                <h3>Yoga</h3>
+                <p>Improve flexibility and reduce stress with daily yoga classes.</p>
+            </div>
+            <div class="box">
+                <img src="https://i.pinimg.com/1200x/4f/f7/d7/4ff7d7ff48bf8aa933aa8a78aa762d22.jpg" alt="Zumba">
+                <h3>Zumba</h3>
+                <p>Fun dance workout to burn calories with music.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans">
+        <h2>Workout Plans</h2>
+        <p>Click a button to see plans for your level.</p>
+        <button onclick="filterPlans('all')">All</button>
+        <button onclick="filterPlans('beginner')">Beginner</button>
+        <button onclick="filterPlans('intermediate')">Intermediate</button>
+        <button onclick="filterPlans('advanced')">Advanced</button>
+
+        <div class="box-container" id="plansContainer">
+            <p>Loading plans...</p>
+        </div>
+    </section>
+
+    <section id="bmi">
+        <h2>BMI Calculator</h2>
+        <p>Enter your weight and height to check your BMI.</p>
+        <label>Weight (kg): </label>
+        <input type="number" id="weight" placeholder="e.g. 70">
+        <br><br>
+        <label>Height (cm): </label>
+        <input type="number" id="height" placeholder="e.g. 170">
+        <br><br>
+        <button onclick="calculateBMI()">Calculate</button>
+        <p id="bmiResult"></p>
+    </section>
+
+    <section id="membership">
+        <h2>Membership Plans</h2>
+        <div class="box-container" id="membershipContainer">
+            <p>Loading plans...</p>
+        </div>
+        <p id="membershipMsg"></p>
+    </section>
+
+    <section id="tips">
+        <h2>Health Tips</h2>
+        <button onclick="toggleTip(1)">Drink Water</button>
+        <p id="tip1" class="hidden">Drink at least 2 to 3 litres of water every day.</p>
+        <br>
+        <button onclick="toggleTip(2)">Sleep Well</button>
+        <p id="tip2" class="hidden">Sleep 7 to 8 hours so your body can recover.</p>
+        <br>
+        <button onclick="toggleTip(3)">Eat Protein</button>
+        <p id="tip3" class="hidden">Eat eggs, dal, paneer, chicken or sprouts for muscle recovery.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <label>Name: </label>
+        <input type="text" id="name">
+        <br><br>
+        <label>Email: </label>
+        <input type="text" id="email">
+        <br><br>
+        <label>Message: </label>
+        <br>
+        <textarea id="message" rows="4" cols="40"></textarea>
+        <br><br>
+        <button onclick="submitForm()">Send</button>
+        <p id="formMsg"></p>
+    </section>
+
+    <footer>
+        <p>GYM 9| Ghaziabad, Uttar Pradesh</p>
+        <p>Open: 5 AM - 10 PM | Phone: 98765 43210</p>
+        <p>&copy; 2026 GYM 9</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

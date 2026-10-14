@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gym>
+
+    <workoutplans>
+        <plan>
+            <name>Beginner Full Body</name>
+            <level>beginner</level>
+            <days>3 days a week</days>
+            <exercise>Squats - 3 x 10</exercise>
+            <exercise>Push ups - 3 x 8</exercise>
+            <exercise>Plank - 3 x 20 sec</exercise>
+        </plan>
+        <plan>
+            <name>Beginner Cardio</name>
+            <level>beginner</level>
+            <days>4 days a week</days>
+            <exercise>Brisk walk - 20 min</exercise>
+            <exercise>Cycling - 10 min</exercise>
+            <exercise>Stretching - 5 min</exercise>
+        </plan>
+        <plan>
+            <name>Push Pull Legs</name>
+            <level>intermediate</level>
+            <days>5 days a week</days>
+            <exercise>Bench press - 4 x 10</exercise>
+            <exercise>Rows - 4 x 10</exercise>
+            <exercise>Leg press - 4 x 12</exercise>
+        </plan>
+        <plan>
+            <name>Fat Loss Circuit</name>
+            <level>intermediate</level>
+            <days>4 days a week</days>
+            <exercise>Burpees - 3 x 12</exercise>
+            <exercise>Mountain climbers - 3 x 30 sec</exercise>
+            <exercise>Jump rope - 5 min</exercise>
+        </plan>
+        <plan>
+            <name>Strength Builder</name>
+            <level>advanced</level>
+            <days>6 days a week</days>
+            <exercise>Deadlift - 5 x 5</exercise>
+            <exercise>Barbell squat - 5 x 5</exercise>
+            <exercise>Overhead press - 4 x 6</exercise>
+        </plan>
+    </workoutplans>
+
+    <memberships>
+        <membership>
+            <name>Basic</name>
+            <price>Rs. 999 / month</price>
+            <feature>Gym access</feature>
+            <feature>Locker room</feature>
+            <feature>1 free trainer session</feature>
+        </membership>
+        <membership>
+            <name>Standard</name>
+            <price>Rs. 1999 / month</price>
+            <feature>Gym access</feature>
+            <feature>Cardio + Yoga classes</feature>
+            <feature>Diet chart</feature>
+        </membership>
+        <membership>
+            <name>Premium</name>
+            <price>Rs. 2999 / month</price>
+            <feature>All classes</feature>
+            <feature>Personal trainer</feature>
+            <feature>Diet chart + Steam room</feature>
+        </membership>
+    </memberships>
+
+</gym>
